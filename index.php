@@ -5,14 +5,6 @@
  * Date: 30-11-2016
  * Time: 12:18
  */
+include_once('conf/_site.conf.php');
 
-$uRL = explode('/', $_SERVER['REQUEST_URI']);
-//  var_dump($uRL);
-$dado='0';
-$path='';
-try {
-    $dado=$uRL[1];
-    $path=$uRL[0];
-}
-catch (Exception $e) {
-}
+include_once(_PATH_ . _SEPATATOR_ . $site . _EXT_);
