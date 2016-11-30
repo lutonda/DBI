@@ -31,7 +31,7 @@ class biRep
     {
         $conn = new _DBconf();
         if ($conn->query($dados) === TRUE) {
-            echo "New record creat successfully" . $conn->insert_id;
+            echo "New record created successfully" . $conn->insert_id;
         } else {
             echo "Error: " . $dados . "<br>" . $conn->error;
         }
