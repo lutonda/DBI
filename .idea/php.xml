@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpProjectServersManager">
+    <servers>
+      <server host="127.0.0.1" id="9d6d2aa9-3da4-40cf-b549-af925d8d0603" name="debug" port="8800" />
+    </servers>
+  </component>
+</project>
