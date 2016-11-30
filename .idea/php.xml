@@ -2,7 +2,8 @@
 <project version="4">
   <component name="PhpProjectServersManager">
     <servers>
-      <server host="localhost" id="9d6d2aa9-3da4-40cf-b549-af925d8d0603" name="debug" port="8800" />
+      <server host="localhost" id="9d6d2aa9-3da4-40cf-b549-af925d8d0603" name="debug" port="8000" />
     </servers>
   </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
 </project>

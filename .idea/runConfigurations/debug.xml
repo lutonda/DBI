@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="debug" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" server_name="debug" session_id="PHPSTORM">
+  <configuration default="false" name="debug" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" server_name="debug" session_id="sebastiao.lutonda">
     <method />
   </configuration>
 </component>
