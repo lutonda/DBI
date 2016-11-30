@@ -7,7 +7,7 @@
  */
 
 $atual = (isset($_GET['isw'])) ? $_GET['isw'] : 'home';
-$pasta = 'paginas';
+$pasta = 'views';
 if (substr_count($atual, '/') > 0) {
     $atual = explode('/', $atual);
     $pagina = (file_exists("{$pasta}/" . $atual[0] . '.php')) ? $atual[0] : 'erro';
