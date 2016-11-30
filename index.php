@@ -6,5 +6,4 @@
  * Time: 12:18
  */
 include_once('conf/_site.conf.php');
-
 include_once(_PATH_ . _SEPATATOR_ . $site . _EXT_);

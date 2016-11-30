@@ -1,3 +1,5 @@
+
+
 <?php
 /**
  * Created by PhpStorm.
@@ -5,3 +7,5 @@
  * Date: 30-11-2016
  * Time: 14:27
  */
+echo 'inicio';
+echo $data;
