@@ -17,5 +17,5 @@ if (substr_count($atual, '/') > 0) {
 } else {
     $pagina = (file_exists("{$pasta}/" . $atual . '.php')) ? $atual : 'erro';
     $id = 0;
-    $frame=0;
-}?>
+    $frame = 0;
+} ?>
