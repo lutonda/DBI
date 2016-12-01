@@ -7,15 +7,26 @@
  */
 
 namespace controller;
+use models\bi;
+use models\biRep;
+include_once('models/rep/biRep.php');
 
 
 class biController
 {
-    public function mostrar($dados){
+    public function mostrar($dados=null){
+        $result = new biRep();
+        $result->mostrar();
+        $bis = array();
+        $bi = new bi();
         while($row = $result->fetch_assoc()) {
-            echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+            $bi->setId($row["id"]);
+            $bi->setNomeCompleto($row["nomeCompleto"]);
+            $bi->setNumBi($row["numBI"]);
+            $bi->setDataEmissao($row["dataEmissao"]);
+            array_push($bis,$bi);
         }
-        return $dados;
+        return $bis;
     }
     public function cadastrar($dados){
 

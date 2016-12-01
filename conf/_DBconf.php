@@ -8,6 +8,7 @@
 
 namespace conf;
 
+include_once('conf/DBinfo.php');
 
 class _DBconf extends DBinfo
 {
@@ -19,17 +20,17 @@ class _DBconf extends DBinfo
 
     protected function con()
     {
-        $this->conneccao = new mysqli($this->_host, $this->_user, $this->_pass);
+        $this->conneccao = new \mysqli($this->_host, $this->_user, $this->_pass);
         return $this->conneccao;
     }
 
     protected function createDB(){
-        $sql = "CREATE DATABASE myDB";
+       /* $sql = "CREATE DATABASE myDB";
         if ($this->conneccao->query($sql) === TRUE) {
             return "Database created successfully";
         } else {
             return "Error creating database: " . $this->conneccao->error;
-        }
+        }*/
     }
     public function closeCon(){
 

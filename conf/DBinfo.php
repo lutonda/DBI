@@ -11,8 +11,8 @@ namespace conf;
 
 class DBinfo
 {
-    protected $_host='';
-    protected $_user='';
-    protected $_pass='';
-    protected $_db='';
+    protected $_host='db4free.net';
+    protected $_user='local_user_1';
+    protected $_pass='9e2244';
+    protected $_db='local_lab_1';
 }

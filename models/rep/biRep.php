@@ -6,23 +6,38 @@
  * Time: 09:03
  */
 
-namespace rep;
-
+namespace models;
+echo '<br>';
+echo '<br>';
+echo '<br>';
+echo '<br>';
+echo '<br>';
+echo '<br>';
 use conf\_DBconf;
+
+include_once('conf/_DBconf.php');
 
 
 class biRep
 {
-    public function mostrar($dados)
+    public function mostrar($dados=null)
     {
+        if (is_numeric($dados)) {
+            $dados = "SELECT * FROM BI WHERE ID=" . $dados;
+        } elseif ($dados==null) {
+            $dados = "SELECT * FROM BI";
+        }
+        else{
 
+            $dados = "SELECT * FROM BI WHERE nomeCompleto like '" . $dados."' or numBI like '".$dados."'";
+        }
         $conn = new _DBconf();
         $result = $conn->query($dados);
-
+        print_r($result);
         if ($result->num_rows > 0) {
-            return $result->fetch_assoc();
+            $dados= $result->fetch_assoc();
         } else {
-            echo "0 results";
+            $dados= $result->num_rows;
         }
         return $dados;
     }
