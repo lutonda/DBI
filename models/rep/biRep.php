@@ -33,7 +33,7 @@ class biRep
         }
         $conn = new _DBconf();
         $result = $conn->query($dados);
-        print_r($result);
+        print_r($result) ;
         if ($result->num_rows > 0) {
             $dados= $result->fetch_assoc();
         } else {
